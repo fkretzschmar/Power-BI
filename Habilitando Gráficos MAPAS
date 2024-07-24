@@ -1,0 +1,23 @@
+*No Power BI Desktop
+-Arquivo
+-Opções e Configurações
+-Opções
+-Segurança
+
+Habilitar:
+-ArcGIS for Power BI
+-Mapa e visuais de Mapa Preenchido
+
+*Feche o Power BI Desktop e abra o Power BI Web "App"
+-Página Inicial
+-Configurações
+-Portal de administração
+-Configurações de locatário
+-Configurações de integração
+
+Habilitar:
+-Usar o visual do Azure Mapas (Aplicar)
+-Mapa e visuais de mapa preenchido (Aplicar)
+
+*Liberado para usar os gráficos de mapa
+
