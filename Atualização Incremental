@@ -1,0 +1,60 @@
+No Power Query
+Na coluna de Data, crie outra coluna igual mais do tipo Data/Hora
+
+*Botão direito em Queries no lado esquerdo(New Parameter...)
+
+- - - - - - - - - - -
+# Manage Parameters #
+Name: RangeStart
+Type: Date/Time
+Current Value: 01/05/2024 00:00
+OK
+- - - - - - - - - - -
+# Manage Parameters #
+Name: RangeEnd
+Type: Date/Time
+Current Value: 10/05/2024 00:00
+OK
+
+= = = = = = = = = = = 
+
+Arquivo -> Opções -> Arquivo Atual -> Carregamento de Dados 
+Tirar o flegue: 
+(Relacionamento)
+-Importar relacionamento de fontes de dados no primeiro carregamento
+-Detectar automaticamente novos relacionamentos depois que os dados são carregados
+
+
+Arquivo -> Opções -> Global -> Editor do Power Query
+(Parâmetros)
+Colocar o flegue:
+Sempre permitir a parametrização de fonte de dados e caixa de diálogo de transformação
+
+= = = = = = = = = = =
+
+Vá para a coluna do tipo Data/Hora
+-Seta para baixo na coluna
+Date/Time Filters -> Between(Entre)
+
+Filter Rows
+-Basic
+is after or equal to  -> RangeStart
+-And
+is before   -> RangeEnd
+
+Fecha e Aplica o Power Query
+
+- - - - - - - - - - - -
+Clique botão direito na tabela que tem a data hora
+-Incremental refresh(Selecione a coluna)
+selecione(2. Set import refresh ranges)
+Archive data starting: 36 Months
+Incrementally refresh data: 21 Days
+Aplicar
+
+*Agora precisa atualizar o Modelo semântico ló no app.powerbi
+
+
+
+
+
